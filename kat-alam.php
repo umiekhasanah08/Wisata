@@ -24,10 +24,7 @@ $stmt5 = $pro5->readAll();
 			    <h1>Selamat datang!</h1>
 			    <p>Obyek Wisata Di Kabupaten Bantul </p>
 			</div>
-			<div>
-				<img src="assets/images/backgro.jpg" class="img-thumbnail" width="565" height="565" alt="BACKGROUND" />
-				<img src="assets/images/backgro1.jpg" class="img-thumbnail" width="565" height="565" alt="BACKGROUND" />
-			</div>
+			<div id="container2" style="min-width: 100%; height: 400px; margin: 0 auto"></div>
 			<br/>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4">
