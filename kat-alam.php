@@ -8,7 +8,7 @@ $stmt3 = $pro3->readAll();
 include_once 'includes/alternatif.inc.php';
 $pro1 = new Alternatif($db);
 $stmt1 = $pro1->readAll();
-$stmt4 = $pro1->readByFilter();
+$stmt4 = $pro1->readByKategoriAlam();
 
 include_once 'includes/kriteria.inc.php';
 $pro2 = new Kriteria($db);
@@ -21,8 +21,21 @@ $stmt5 = $pro5->readAll();
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12">
 			<div class="jumbotron">
-			    <h1>Selamat datang!</h1>
-			    <p>Obyek Wisata Di Kabupaten Bantul </p>
+			    <h1>Wisata Alam</h1>
+			    <p>Kategori: Wisata Alam </p>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+			</div>
+			<div>
+						<img src="assets/images/alam/pinuspengger.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Pinus Pengger" />
+						<img src="assets/images/alam/puncakbecici.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Puncak Becici" />
+						<img src="assets/images/alam/parangtritis.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Parangtritis" />
+						<img src="assets/images/alam/gumukpasir.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Gumuk Pasir" />
+						<img src="assets/images/alam/curugpulosari.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Curug Pulosari" />
+						<img src="assets/images/alam/backgro.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Kebun Buah Mangunan" />
+						<img src="assets/images/alam/seribubatu.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Seribu Batu Songgo Langit" />
+						<img src="assets/images/alam/pantaisamas.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Pantai Samas" />
+						<img src="assets/images/alam/goaselarong.jpg" class="img-thumbnail" width="75" height="75" alt="BACKGROUND" title="Goa Selarong" />
 			</div>
 			<div id="container2" style="min-width: 100%; height: 400px; margin: 0 auto"></div>
 			<br/>
@@ -91,10 +104,10 @@ $stmt5 = $pro5->readAll();
 				type: 'column'
 			},
 			title: {
-				text: 'Grafik Usulan'
+				text: 'Grafik Kategori Alam'
 			},
 			xAxis: {
-				categories: ['Alternatif']
+				categories: ['Nilai Alternatif Wisata Alam']
 			},
 			yAxis: {
 				title: {

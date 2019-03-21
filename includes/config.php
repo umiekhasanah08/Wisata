@@ -1,7 +1,7 @@
 <?php
 class Config {
   private $host = "localhost";
-  private $db_name = "employees";
+  private $db_name = "pariwisata";
   private $username = "root";
   private $password = "";
   public $conn;

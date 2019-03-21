@@ -59,9 +59,9 @@ $db = $config->getConnection();
 			  <li class="dropdown">
                   <a href="#" class="dropdown-toggle text-red text-bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Kategori<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                      <li><a href="profil.php">Budaya</a></li>
-                          <li><a href="user.php">Wisata Alam</a></li>
-                      <li><a href="logout.php">Wisata Buatan</a></li>
+                      <li><a href="kat-budaya.php">Budaya</a></li>
+                          <li><a href="kat-alam.php">Wisata Alam</a></li>
+                      <li><a href="kat-buatan.php">Wisata Buatan</a></li>
                   </ul>
               </li>
           </ul>

@@ -15,6 +15,7 @@ class Alternatif {
 	public $pendidikan;
 	public $hasil_akhir;
 	public $skor_alternatif;
+	public $kategori;
 
 	public function __construct($db) {
 		$this->conn = $db;
@@ -56,6 +57,32 @@ class Alternatif {
 
 		return $stmt;
 	}
+
+	function readByKategoriAlam() {
+		$query = "SELECT * FROM {$this->table_name} a JOIN nilai_awal b ON a.id_alternatif=b.id_alternatif WHERE a.id_kategori='2'";
+		$stmt = $this->conn->prepare( $query );
+		$stmt->execute();
+
+		return $stmt;
+	}
+
+	function readByKategoriBudaya() {
+		$query = "SELECT * FROM {$this->table_name} a JOIN nilai_awal b ON a.id_alternatif=b.id_alternatif WHERE a.id_kategori='1'";
+		$stmt = $this->conn->prepare( $query );
+		$stmt->execute();
+
+		return $stmt;
+	}
+
+	function readByKategoriBuatan() {
+		$query = "SELECT * FROM {$this->table_name} a JOIN nilai_awal b ON a.id_alternatif=b.id_alternatif WHERE a.id_kategori='3'";
+		$stmt = $this->conn->prepare( $query );
+		$stmt->execute();
+
+		return $stmt;
+	}
+	
+
 
 	function countByFilter() {
 		$query = "SELECT * FROM {$this->table_name} a JOIN nilai_awal b ON a.id_alternatif=b.id_alternatif WHERE b.keterangan='B' ";
